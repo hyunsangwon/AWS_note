@@ -7,7 +7,7 @@
 
 
 ## S3 버킷 정책
-{
+1. {
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -20,7 +20,7 @@
 }
 
 ## S3 CORS 구성 편집기
-<?xml version="1.0" encoding="UTF-8"?>
+1. <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 <CORSRule>
     <AllowedOrigin>*</AllowedOrigin>
