@@ -14,9 +14,9 @@
 ## SAM 명령어
 1. SAM 구성
 - sam init --runtime python3.8 --name my-sls-app
-2. 일회성 호출 만들기
+2. 일회성 호출 만들기  
  2-1. 이벤트 없이
- - sam local invoke "HelloWorldFunction" --no-event
+ - sam local invoke "HelloWorldFunction" --no-event  
  2-2. 이벤트 넣어서
  - sam local invoke "HelloWorldFunction" -e events/event.json
 3. 디플로이 파일 만들고 s3에 업로드 
