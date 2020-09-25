@@ -17,9 +17,9 @@ Resources:
       Runtime: python3.8
       Environment:
         Variables:
-          ACCESS_KEY: AKIA5347VKMTGZAIIY26
-          SECRET_KEY: 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
-          HOST: cntech-cmng-rds.cluster-cx5bxzhq9ou1.ap-northeast-2.rds.amazonaws.com
-          DATABASE: CMNG_test
-          PASSWORD: thewitcher3wildhunt
-          USER: postgres
+          ACCESS_KEY: 
+          SECRET_KEY: 
+          HOST: 
+          DATABASE: 
+          PASSWORD: 
+          USER: 
