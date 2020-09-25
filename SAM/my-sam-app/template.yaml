@@ -17,9 +17,9 @@ Resources:
       Runtime: python3.8
       Environment:
         Variables:
-          ACCESS_KEY: 
-          SECRET_KEY: 
-          HOST: 
-          DATABASE: 
-          PASSWORD: 
-          USER: 
+          ACCESS_KEY: your_access_key
+          SECRET_KEY: your_secret_key
+          HOST: db_host
+          DATABASE: db_name
+          PASSWORD: user_password
+          USER: user_name
