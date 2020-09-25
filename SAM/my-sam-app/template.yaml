@@ -12,26 +12,14 @@ Resources:
   HelloWorldFunction: # deploy invoke,deploy 할 function 변수
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello_world/ # 경로
-      Handler: app.lambda_handler # 함수 이름
-      Runtime: python3.8 
-      Events:
-        HelloWorld:
-          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
-          Properties:
-            Path: /hello
-            Method: get
-
-Outputs:
-  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
-  # Find out more about other implicit resources you can reference within SAM
-  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
-  HelloWorldApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
-  HelloWorldFunction:
-    Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunction.Arn
-  HelloWorldFunctionIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt HelloWorldFunctionRole.Arn
+      #CodeUri: hello_world/ # 경로
+      Handler: lambda_function.lambda_handler # 함수 이름
+      Runtime: python3.8
+      Environment:
+        Variables:
+          ACCESS_KEY: AKIA5347VKMTGZAIIY26
+          SECRET_KEY: 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
+          HOST: cntech-cmng-rds.cluster-cx5bxzhq9ou1.ap-northeast-2.rds.amazonaws.com
+          DATABASE: CMNG_test
+          PASSWORD: thewitcher3wildhunt
+          USER: postgres
