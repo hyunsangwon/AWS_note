@@ -23,3 +23,5 @@
 3. 업로드할 파일 zip으로 압축
 4. 람다 소스 배포
 - aws lambda update-function-code --function-name my-function --zip-file fileb://app.zip
+5. 코드가 수정 되었다면 빌드!
+-  sam build
