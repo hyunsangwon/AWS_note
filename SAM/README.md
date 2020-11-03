@@ -26,7 +26,7 @@
 5. 코드가 수정 되었다면 빌드!
 -  sam build
 
-## Debug 방법  
+## Debug 방법 :wrench:  
 1. pip install ptvsd (원격 디버깅 라이브러리 설치)  
 2. requirements.txt 편집  
 ptvsd==4.1.4  
