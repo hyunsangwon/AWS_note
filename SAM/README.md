@@ -37,6 +37,7 @@ import ptvsd
 ptvsd.enable_attach(address=('0.0.0.0', 5858), redirect_output=True)
 ptvsd.wait_for_attach()
 5. VS Code로 디버깅을 한다면 launch.json 작성(VS Code는모든 것을 실행하는 방법은 알고 있지 않기에.)  
+```
 {
     "version": "0.2.0",
     "configurations": [
@@ -55,4 +56,5 @@ ptvsd.wait_for_attach()
         }
     ]
 }
+```
 6. sam local start-api -d 5858 (디버깅 시작)
