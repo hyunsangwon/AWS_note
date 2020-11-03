@@ -12,7 +12,7 @@
 - docker window 설치 전 WSL2 설치 방법 (https://www.44bits.io/ko/post/wsl2-install-and-basic-usage)
 - aws cli 설치
 - aws configure 설정
-## SAM 명령어
+## SAM 주요 명령어
 1. SAM 구성
 - sam init --runtime python3.8 --name my-sls-app
 2. 일회성 호출 만들기  
