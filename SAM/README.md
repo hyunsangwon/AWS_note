@@ -25,3 +25,38 @@
 - aws lambda update-function-code --function-name my-function --zip-file fileb://app.zip
 5. 코드가 수정 되었다면 빌드!
 -  sam build
+
+## Debug 방법  
+1. pip install ptvsd (원격 디버깅 라이브러리 설치)  
+2. requirements.txt 편집  
+ptvsd==4.1.4  
+4. build 디렉토리 생성 (hello_world 아래)  
+3. pip install -r ./requirements.txt -t hello_world\build  
+4. 메인 함수에 아래 코드 추가  
+import ptvsd
+ptvsd.enable_attach(address=('0.0.0.0', 5858), redirect_output=True)
+ptvsd.wait_for_attach()
+5. VS Code로 디버깅을 한다면 launch.json 작성(VS Code는모든 것을 실행하는 방법은 알고 있지 않기에.)  
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug with SAM CLI (Remote Debug)",
+            "type": "python",
+            "request": "attach",
+            "port": 5858,
+            "host":  "localhost",
+            "pathMappings": [
+                {
+                "localRoot": "${workspaceFolder}/hello_world/build",
+                "remoteRoot" : "/var/task"
+                }
+            ]
+        }
+    ]
+}
+6. sam local start-api -d 5858 (디버깅 시작)
