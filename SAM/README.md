@@ -33,9 +33,11 @@ ptvsd==4.1.4
 4. build 디렉토리 생성 (hello_world 아래)  
 3. pip install -r ./requirements.txt -t hello_world\build  
 4. 메인 함수에 아래 코드 추가  
+```
 import ptvsd
 ptvsd.enable_attach(address=('0.0.0.0', 5858), redirect_output=True)
 ptvsd.wait_for_attach()
+```
 5. VS Code로 디버깅을 한다면 launch.json 작성(VS Code는모든 것을 실행하는 방법은 알고 있지 않기에.)  
 ```
 {
