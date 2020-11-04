@@ -19,7 +19,7 @@
  2-1. 이벤트 없이
  - sam local invoke "HelloWorldFunction" --no-event  
  2-2. 이벤트 넣어서
- - sam local invoke "HelloWorldFunction" -e events/event.json
+ - sam local invoke "HelloWorldFunction" -e events/event.json  
  2-3. help  
  - sam local invoke --help  
 3. 업로드할 파일 zip으로 압축
