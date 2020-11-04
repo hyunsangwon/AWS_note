@@ -20,6 +20,8 @@
  - sam local invoke "HelloWorldFunction" --no-event  
  2-2. 이벤트 넣어서
  - sam local invoke "HelloWorldFunction" -e events/event.json
+ 2-3. help  
+ - sam local invoke --help  
 3. 업로드할 파일 zip으로 압축
 4. 람다 소스 배포
 - aws lambda update-function-code --function-name my-function --zip-file fileb://app.zip
