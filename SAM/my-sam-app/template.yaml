@@ -23,3 +23,5 @@ Resources:
           DATABASE: db_name
           PASSWORD: user_password
           USER: user_name
+    Events: #람다 트리거
+      
