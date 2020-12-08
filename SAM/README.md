@@ -62,3 +62,7 @@ ptvsd.wait_for_attach()
 }
 ```
 6. sam local start-api -d 5858 (디버깅 시작)
+
+
+### 참고자료
+https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/what-is-sam.html
