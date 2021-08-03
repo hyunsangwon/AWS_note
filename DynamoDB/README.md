@@ -31,10 +31,11 @@
 3. 삭제 가능
 4. 테이블 생성후 생성 가능
 5. GSI 는 언제나 eventual consistent read 가 적용
+6. GSI는 날짜 관련 컬럼으로 하는것이 좋다.
 - LSI (Local Secondary Index)
-1. 테이블과 동일한 Partition Key
-2. 삭제 불가능
-3. 테이블 생성시 생성 가능
+7. 테이블과 동일한 Partition Key
+8. 삭제 불가능
+9. 테이블 생성시 생성 가능
 
 ## DynamoDB 비용 :moneybag:
 - 쓰기는 가장 비싼 작업!
