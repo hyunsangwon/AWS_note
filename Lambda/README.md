@@ -25,4 +25,6 @@
     1. 디버깅 환경을 따로 구축해야함 SAM(Serverless Application Model).
     2. DynamoDB, API Gateway 등 다른 서비스랑 이용시 권한을 매번 추가 해야함.
     3. Warm Start와 Cold Start가 존재하므로 파이썬이나 자바스크립트 언어로 관리하는게 이득.
-    4. 레이어 기능이 있어 사용하고 싶은 라이브러리를 미리 준비할 수 있음.
+    4. Layer기능이 있어 사용하고 싶은 라이브러리를 미리 준비할 수 있음.
+    5. 람다는 리눅스에서 실행 된다.
+    6. aws-sdk 내장 라이브러리가 있어 Layer에 추가할 필요 없음.
