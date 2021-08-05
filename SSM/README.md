@@ -101,17 +101,17 @@ aws ssm terminate-session --session-id <session-id>
 
 ### 참고문헌
 
-[1] Session Manager Plugin 설치
-https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
-[2] 시작 명령어
-https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html
-[3] SSH 연결
-https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-getting-started-enable-ssh-connections.html
-[4] SSH 연결
-https://medium.com/@dnorth98/hello-aws-session-manager-farewell-ssh-7fdfa4134696
-[5] profile 수정
-https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html
-[6] 작동방식
-https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/how-it-works.html
-[7] 우분투 SSM 설치
-https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/agent-install-ubuntu.html
+[1] Session Manager Plugin 설치  
+https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html  
+[2] 시작 명령어  
+https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html  
+[3] SSH 연결  
+https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/session-manager-getting-started-enable-ssh-connections.html  
+[4] SSH 연결  
+https://medium.com/@dnorth98/hello-aws-session-manager-farewell-ssh-7fdfa4134696  
+[5] profile 수정  
+https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html  
+[6] 작동방식  
+https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/how-it-works.html  
+[7] 우분투 SSM 설치  
+https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/agent-install-ubuntu.html  
