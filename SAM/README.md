@@ -1,4 +1,4 @@
-## AWS SAM ?
+## AWS SAM(Serverless Application Model) ?
 
 ### SAM를 실행하는 환경에서 필요한 설치 목록
 
