@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+    SMMSV2OuterMoveEventCheckTEST:
+        Type: "AWS::Serverless::Function"
+        Properties:
+            Handler: lambda_function.lambda_handler
+            Runtime: python3.6
+            CodeUri: .
+            Description: ""
+            MemorySize: 128
+            Timeout: 300
+            Role: >-
+                arn:aws:iam::582187389564:role/service-role/your_role
+            Events:
+                DynamoDB1:
+                    Type: DynamoDB
+                    Properties:
+                        Stream:
+                            "Fn::GetAtt":
+                                - Table1
+                                - StreamArn
+                        StartingPosition: TRIM_HORIZON
+                        BatchSize: 100
+            Environment:
+                Variables:
+                    MAIN_DB_HOST: your_db_ip
+                    MAIN_DB: your_db_name
+                    MAIN_DB_USER: your_db_user_name
+                    MAIN_DB_PASSWORD: your_db_user_password
+                    MAIN_DB_PORT: your_db_port
+                    ACCESS_KEY: your_aws_key
+                    SECRET_KEY: your_aws_key
+                    EVENT_DIAGNOSIS_DB: SMMS_V2_Event_Diagnosis_TEST
+                    OUTER_MOVE_EVENT_CHECK_REQUEST_DB: SMMS_V2_Outer_Move_Event_Check_Request_TEST
+                    ERROR_DB: SMMS_V2_Error_TEST
+                    CELL_POSITION_DB: SMMS_V2_Cell_Position
+                    BLUECHIP_CNS_HISTORY_DB: SMMS_V2_Bluechip_CNS_History
+            Layers:
+                - "arn:aws:lambda:ap-northeast-2:582187389564:layer:haversine:1"
+                - "arn:aws:lambda:ap-northeast-2:582187389564:layer:psycopg2:1"
+                - "arn:aws:lambda:ap-northeast-2:582187389564:layer:pycrypto:1"
+    Table1:
+        Type: "AWS::DynamoDB::Table"
+        Properties:
+            AttributeDefinitions:
+                - AttributeName: id
+                  AttributeType: S
+            KeySchema:
+                - AttributeName: id
+                  KeyType: HASH
+            ProvisionedThroughput:
+                ReadCapacityUnits: 5
+                WriteCapacityUnits: 5
+            StreamSpecification:
+                StreamViewType: NEW_IMAGE

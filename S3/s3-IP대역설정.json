@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "SmmsV2WebGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": ["arn:aws:s3:::your_s3_name", "arn:aws:s3:::your_s3_name/*"],
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": ["3.34.204.200", "15.165.150.43"]
+                }
+            }
+        }
+    ]
+}
