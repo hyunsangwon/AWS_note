@@ -9,76 +9,16 @@
             "dynamodb": {
                 "ApproximateCreationDateTime": 1600955468,
                 "Keys": {
-                    "packet_search_code": {
-                        "S": "200924_041254_27969773"
+                    "id": {
+                        "S": "100"
                     }
                 },
                 "NewImage": {
-                    "location_source": {
-                        "S": "cell_position_SKT_3G"
+                    "name": {
+                        "S": "Sangwon Hyun"
                     },
-                    "completed_at_utc0": {
-                        "S": "2020-09-24 13:51:08.729116"
-                    },
-                    "packet_search_code": {
-                        "S": "200924_041254_27969773"
-                    },
-                    "euid": {
-                        "S": "20079900"
-                    },
-                    "lng": {
-                        "S": "128.737777"
-                    },
-                    "detach_event_check": {
-                        "S": "detach_200212.py"
-                    },
-                    "firmware_ver": {
-                        "S": "3"
-                    },
-                    "bank_nm": {
-                        "S": "상원은행"
-                    },
-                    "warranty_nm": {
-                        "S": "상원 파쇄기"
-                    },
-                    "is_detach_event": {
-                        "S": "False"
-                    },
-                    "branch_nm": {
-                        "S": "상원"
-                    },
-                    "log_srl": {
-                        "S": "13620710"
-                    },
-                    "mag": {
-                        "S": "{X:6164,Y:20740,Z:-10016}"
-                    },
-                    "received_at_utc0": {
-                        "S": "2020-12-16 13:51:06.616"
-                    },
-                    "packet_id": {
-                        "S": "2"
-                    },
-                    "company_nm": {
-                        "S": "상원회사(주)"
-                    },
-                    "warranty_srl": {
-                        "S": "8798"
-                    },
-                    "branch_srl": {
-                        "S": "638"
-                    },
-                    "company_srl": {
-                        "S": "6406"
-                    },
-                    "cell_id": {
-                        "S": "65661480"
-                    },
-                    "lat": {
-                        "S": "35.755833"
-                    },
-                    "bank_srl": {
-                        "S": "222"
+                    "age": {
+                        "N": 29
                     }
                 },
                 "SequenceNumber": "1178881100000000001453067544",

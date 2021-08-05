@@ -9,9 +9,8 @@ ptvsd.wait_for_attach()
 
 def lambda_handler(event, context):
     
-    print(event)
     main_function(event, context)
-            
+     
     return {
         'statusCode': 200,
         'body': json.dumps('Completed Lambda function!')
