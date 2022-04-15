@@ -1,22 +1,24 @@
 ## AWS SAM(Serverless Application Model) ?
 
-### SAM를 실행하는 환경에서 필요한 설치 목록
+### Required installation
 
--   Python 설치
+1. Python 설치
 
--   SAM 설치
+2. aws-sam-cli 설치
 
-```
+```bash
  //--user 옵션을 추가하면  root 권한이 없어도 패키지 설치가 가능.
  pip install --user aws-sam-cli
 ```
 
--   Docker 설치  
+3. Docker 설치  
     OS Window일 경우 WSL2가 설치되어야함.
     (https://www.44bits.io/ko/post/wsl2-install-and-basic-usage)
--   AWS CLI 설치
 
-### SAM 설치
+4. AWS CLI 설치 (아래 링크 참고)
+ https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html
+ 
+### SAM 구축 명령어
 
 ```
 sam init --runtime <your python version> --name <project name>
