@@ -7,6 +7,7 @@
 -   SAM 설치
 
 ```
+ //--user 옵션을 추가하면  root 권한이 없어도 패키지 설치가 가능.
  pip install --user aws-sam-cli
 ```
 
