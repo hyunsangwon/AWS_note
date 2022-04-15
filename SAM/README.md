@@ -12,11 +12,14 @@
 ```
 
 3. Docker 설치  
-    OS Window일 경우 WSL2가 설치되어야함.
-    (https://www.44bits.io/ko/post/wsl2-install-and-basic-usage)
-
-4. AWS CLI 설치 (아래 링크 참고)
- https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html
+    *Window일 경우 WSL2가 설치되어야함.  
+    (https://www.44bits.io/ko/post/wsl2-install-and-basic-usage)  
+    
+    *Mac 설치  
+    https://docs.docker.com/desktop/mac/install/  
+  
+4. AWS CLI 설치 (링크 참고)  
+ https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html  
  
 ### SAM 구축 명령어
 
