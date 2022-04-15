@@ -1,6 +1,6 @@
-## AWS SAM(Serverless Application Model) ?
+## AWS SAM(Serverless Application Model)
 
-### Required installation
+### step1. 설치
 
 1. Python 설치
 
@@ -21,7 +21,7 @@
 4. AWS CLI 설치 (링크 참고)  
  https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html  
  
-### SAM 구축 명령어
+### step2. SAM 환경 구축하기
 
 ```
 sam init --runtime <your python version> --name <project name>
